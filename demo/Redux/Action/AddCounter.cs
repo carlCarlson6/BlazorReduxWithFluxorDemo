@@ -1,4 +1,4 @@
 ﻿namespace BlazorReduxDemo.Redux.Action
 {
-    public record AddCounter { }
+    public class AddCounter { }
 }

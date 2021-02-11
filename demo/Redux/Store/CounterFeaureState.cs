@@ -8,7 +8,7 @@ namespace BlazorReduxDemo.Redux.Store
 
         protected override CounterState GetInitialState()
         {
-            return new CounterState { Count = 0 };
+            return new CounterState(0);
         }
     }
 }

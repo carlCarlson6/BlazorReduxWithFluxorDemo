@@ -10,10 +10,8 @@ namespace BlazorReduxDemo.Redux.Reducer
         public static CounterState OnAddCounter(CounterState state, AddCounter action)
         {
             // en ts / js es equivalente a => { ... state, Count: state.Count }
-            return state with
-            {
-                Count = state.Count + 1
-            };
+            int newCount = state.Count + 1;
+            return new CounterState(newCount);
         }
     }
 }
